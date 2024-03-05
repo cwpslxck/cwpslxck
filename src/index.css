@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: font, sans-serif;
+    direction: rtl;
+    @apply z-20 ;
+}
+
+@font-face {
+    font-family: font;
+    src: url(assets/font.woff);
+}
+
+@font-face {
+    font-family: hodhod;
+    src: url(assets/Hodhod-Sqaure-Dots.woff2);
+}
+
+.hodhod {
+    font-family: hodhod, sans-serif;
+}
+
+button {
+    @apply px-3 py-2 rounded-xl
+}
+
+body {
+    @apply min-h-screen w-full font-medium bg-neutral-900 text-neutral-50
+}
+
+#biog div {
+    @apply text-xl px-2 mx-[2px] inline-block bg-neutral-50 text-neutral-950 rounded-lg cursor-default
+}
+#biog div p {
+    @apply flex h-full w-full justify-center items-center flex-row
+}
+
+.bg1 {
+    @apply bg-neutral-800
+}
+
+.bg1blur {
+    @apply bg-neutral-800/50 backdrop-blur-2xl
+}
