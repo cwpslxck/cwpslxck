@@ -10,7 +10,9 @@ function Header() {
           <img src="cwpslxck.png" className="h-full w-auto invert" alt="" />
         </Link>
         <div className="h-full flex justify-end items-center gap-3">
-          <Link to={`/links`}>لینک های من</Link>
+          <a target="_blank" href="https://instagram.com/cwpslxck" className="">
+            اینستاگرام
+          </a>
         </div>
       </ul>
     </div>
