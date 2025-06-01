@@ -1,103 +1,246 @@
+import CalculateAge from "@/Components/calculateAge";
+import Section from "@/Components/section";
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const skills = [
+    "Reactjs",
+    "Nextjs",
+    "Tailwindcss",
+    "Typescript",
+    "CursorAI",
+    "ShadcnUI",
+    "DaisyUI",
+  ];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+  return (
+    <>
+      <Section>
+        <div className="flex justify-between items-start p-6">
+          <div className="w-[80%]">
+            <p className="text-6xl font-black">Hi, i'm Amin👋🏻</p>
+            <p className="text-xl">
+              <CalculateAge />
+              -year-old digital creator, frontend developer
+              <br />
+              Interested in startups, arts, video editing
+            </p>
+          </div>
+          <div className="max-w-24">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              draggable="false"
+              className="rounded-xl"
+              alt="Profile Picture"
+              src={"https://github.com/cwpslxck.png"}
+              width={100}
+              height={100}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </Section>
+      <Section title="About">
+        <p className="opacity-85">
+          I'm currently working on{" "}
+          <a href="https://x.com/yxnstudio" target="_blank">
+            @YXNstudio
+          </a>
+          . A platform for new-generation artists that help them manage theire
+          works & sell products & post job applications and many more features.
+        </p>
+      </Section>
+      <Section title="Skills">
+        <div className="w-full flex flex-wrap gap-2">
+          {skills.map((skill, i) => (
+            <div
+              className="px-1.5 py-0.5 bg-black rounded-lg text-white"
+              key={i}
+            >
+              {skill}
+            </div>
+          ))}
+        </div>
+      </Section>
+      <Section classNameWrapper="flex flex-col gap-4" title="Work Experience">
+        <div className="w-full border bg-white border-black/10 rounded-md min-h-28 flex justify-between items-start p-4 gap-4  ">
+          <div className="w-12">
+            <Image
+              draggable="false"
+              className="rounded-full"
+              alt="Profile Picture"
+              src={"https://github.com/cwpslxck.png"}
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="w-full h-full">
+            <div className="w-full justify-between flex items-start pb-2">
+              <div>
+                <p className="font-extrabold">LearnPOV</p>
+                <p className="text-sm">1/2 of Frontend Team</p>
+              </div>
+              <div className="text-sm opacity-80">April 2025 - Present</div>
+            </div>
+            <div>
+              jfkds lkdjflsj fldks jfs j lfjdsj fljdf lsdjf lksdjf lkdsjf
+              lkdjkldfj slkdfj sdlkfj slkjslkf jsdlk sldkjflk sj
+            </div>
+          </div>
+        </div>
+        <div className="w-full border bg-white border-black/10 rounded-md min-h-28 flex justify-between items-start p-4 gap-4  ">
+          <div className="w-12">
+            <Image
+              draggable="false"
+              className="rounded-full"
+              alt="Profile Picture"
+              src={"https://github.com/cwpslxck.png"}
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className="w-full h-full">
+            <div className="w-full justify-between flex items-start pb-2">
+              <div>
+                <p className="font-extrabold">LearnPOV</p>
+                <p className="text-sm">1/2 of Frontend Team</p>
+              </div>
+              <div className="text-sm opacity-80">April 2025 - Present</div>
+            </div>
+            <div>
+              jfkds lkdjflsj fldks jfs j lfjdsj fljdf lsdjf lksdjf lkdsjf
+              lkdjkldfj slkdfj sdlkfj slkjslkf jsdlk sldkjflk sj
+            </div>
+          </div>
+        </div>
+      </Section>
+      <Section>
+        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical -mb-8">
+          <li>
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div className="timeline-start mb-10 md:text-end">
+              <time className="font-mono italic">2020</time>
+              <div className="text-lg font-black">how everythings begin?</div>I
+              bought a Premier Pro course from a random man and started my
+              profesional carier in video editing while i edit with my phone
+              before
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div className="timeline-end md:mb-10">
+              <time className="font-mono italic">2021</time>
+              <div className="text-lg font-black">on my way to coding</div>
+              Covid kickes in and i had a lots of time to try new things :)
+              <br />I figured out how{" "}
+              <a target="_blank" href="https://multitheftauto.com/">
+                Mta
+              </a>{" "}
+              game works
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div className="timeline-start mb-10 md:text-end">
+              <time className="font-mono italic">2023</time>
+              <div className="text-lg font-black">
+                web development & branding
+              </div>
+              i started few instagram pages
+              <br />
+              such as @cwpslxck, @trxpfa and hit some views on it
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div className="timeline-end md:mb-10">
+              <time className="font-mono italic">2024</time>
+              <div className="text-lg font-black">time to make money bruh</div>i
+              started to learn React.js
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div className="timeline-middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="h-5 w-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </div>
+            <div className="timeline-start mb-10 md:text-end">
+              <time className="font-mono italic">2025</time>
+              <div className="text-lg font-black">is this the year?</div>
+              make some real connections with web developers and started
+            </div>
+            {/* <hr /> */}
+          </li>
+        </ul>
+      </Section>
+    </>
   );
 }

@@ -1,26 +1,40 @@
 @import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+  exclude: scrollbar, rootscrollgutter;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  border-radius: 10px;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-gray-50);
+  --foreground: var(--color-stone-950);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* add fonts here */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
+  @apply select-none scroll-smooth;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  @apply p-5 border-b border-black/10;
+}
+
+a {
+  @apply text-stone-800 hover:underline;
 }
