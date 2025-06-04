@@ -35,6 +35,6 @@ section {
   @apply p-5 border-b border-black/10;
 }
 
-a {
-  @apply text-stone-800 hover:underline;
+a.external-links {
+  @apply text-stone-900 hover:underline;
 }
