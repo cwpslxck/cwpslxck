@@ -3,6 +3,7 @@ import Section from "@/Components/section";
 import Image from "next/image";
 import { Mail } from "lucide-react";
 import Link from "next/link";
+import { BsFillCheckCircleFill } from "react-icons/bs";
 
 export default function Home() {
   const skills = [
@@ -88,143 +89,150 @@ export default function Home() {
                 <p className="font-extrabold">YXN Studio</p>
                 <p className="text-sm">Founder</p>
               </div>
-              <div className="text-sm opacity-80">July 2023 - Present</div>
+              <div className="text-sm opacity-80">Jul 2023 - Present</div>
             </div>
             <div>
-              jfkds lkdjflsj fldks jfs j lfjdsj fljdf lsdjf lksdjf lkdsjf
-              lkdjkldfj slkdfj sdlkfj slkjslkf jsdlk sldkjflk sj
+              a platform for new-generation artists to make connections &
+              <br />
+              find jobs & sell products and make arts!
+            </div>
+          </div>
+        </Link>
+        <Link
+          href={"https://website.learnpov.com"}
+          target="_blank"
+          className="w-full border bg-white border-black/10 rounded-md min-h-28 flex justify-between items-start p-4 gap-4  "
+        >
+          <div className="w-12">
+            <Image
+              draggable="false"
+              className="rounded-full aspect-square object-contain"
+              alt="Brand Picture"
+              src={"/images/learnpov.jpg"}
+              width={60}
+              height={60}
+            />
+          </div>
+          <div className="w-full h-full">
+            <div className="w-full justify-between flex pb-2">
+              <div>
+                <p className="font-extrabold">Learn POV</p>
+                <p className="text-sm">1/2 Frontend team</p>
+              </div>
+              <div className="text-sm opacity-80">Apr 2025 - Present</div>
+            </div>
+            <div>
+              Linkedin-like multilingual Iranian social network with focus on
+              approved content
             </div>
           </div>
         </Link>
       </Section>
       <Section>
+        <p className="text-center font-bold">SOCIAL MEDIA STATUS</p>
+        <div className="pt-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="flex justify-center items-center flex-col">
+            <div className="text-7xl font-extrabold tracking-tight drop-shadow-xl">
+              61
+            </div>
+            <p>Github Followers</p>
+          </div>
+          <div className="flex justify-center items-center flex-col">
+            <div className="text-7xl font-extrabold tracking-tight drop-shadow-xl">
+              7
+            </div>
+            <p>Twitch Follower</p>
+          </div>
+          <div className="flex justify-center items-center flex-col">
+            <div className="text-7xl font-extrabold tracking-tight drop-shadow-xl">
+              22
+            </div>
+            <p>Youtube Videos</p>
+          </div>
+        </div>
+      </Section>
+      <Section>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical -mb-8">
           <li>
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <BsFillCheckCircleFill />
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2020</time>
               <div className="text-lg font-black">how everythings begin?</div>I
-              bought a Premier Pro course from a random man and started my
-              profesional carier in video editing while i edit with my phone
-              before
+              Bought a Premiere Pro course, started my professional video
+              editing journey after editing on mobile for a year.
             </div>
             <hr />
           </li>
           <li>
             <hr />
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <BsFillCheckCircleFill />
             </div>
             <div className="timeline-end md:mb-10">
               <time className="font-mono italic">2021</time>
               <div className="text-lg font-black">on my way to coding</div>
-              Covid kickes in and i had a lots of time to try new things :)
-              <br />I figured out how{" "}
+              COVID lockdown led me to explore new skills. Learned how{" "}
               <a
                 className="external-links"
                 target="_blank"
                 href="https://multitheftauto.com/"
               >
-                Mta
+                MTA
               </a>{" "}
-              game works
+              game server development works.
             </div>
             <hr />
           </li>
           <li>
             <hr />
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <BsFillCheckCircleFill />
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2023</time>
-              <div className="text-lg font-black">
-                web development & branding
-              </div>
-              i started few instagram pages
-              <br />
-              such as @cwpslxck, @trxpfa and hit some views on it
+              <div className="text-lg font-black">web & branding era</div>
+              Launched Instagram pages{" "}
+              <a
+                className="external-links"
+                href="https://instagram.com/cwpslxck"
+              >
+                @cwpslxck
+              </a>
+              ,{" "}
+              <a
+                className="external-links"
+                href="https://instagram.com/vlonefarsi"
+              >
+                @vlonefarsi
+              </a>{" "}
+              that gained significant traction and views.
             </div>
             <hr />
           </li>
           <li>
             <hr />
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <BsFillCheckCircleFill />
             </div>
             <div className="timeline-end md:mb-10">
               <time className="font-mono italic">2024</time>
               <div className="text-lg font-black">time to make money bruh</div>i
-              started to learn React.js
+              Began learning React.js to turn skills into income opportunities.
             </div>
             <hr />
           </li>
           <li>
             <hr />
             <div className="timeline-middle">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="h-5 w-5"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <BsFillCheckCircleFill />
             </div>
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2025</time>
               <div className="text-lg font-black">is this the year?</div>
-              make some real connections with web developers and started
+              Building connections in web development and taking projects to the
+              next level.
             </div>
             {/* <hr /> */}
           </li>
@@ -232,10 +240,24 @@ export default function Home() {
       </Section>
       <Section>
         <div className="flex flex-col items-center gap-3 py-6">
-          <p className="text-3xl md:text-6xl font-black">Get In Touch</p>
-          <Link href={"mailto:cwpslxck@gmail.com"}>
-            <Mail />
+          <Link
+            className="px-4 hover:scale-105 transition-transform py-2 bg-gradient-to-l from-zinc-700 via-zinc-900 to-zinc-950 text-white items-center inline-flex gap-2 rounded-lg"
+            href={"mailto:cwpslxck@gmail.com"}
+          >
+            <Mail size={18} />
+            <p>Let's Connect</p>
           </Link>
+          <p className="text-3xl md:text-6xl font-black">Get In Touch</p>
+          <div className="text-center text-base md:text-xl">
+            Ready to collaborate? Reach out via
+            <br />
+            <a className="text-blue-500" href="mailto:cwpslxck@gmail.com">
+              cwpslxck@gmail.com
+            </a>{" "}
+            or
+            <br />
+            connect with me on X
+          </div>
         </div>
       </Section>
     </>
