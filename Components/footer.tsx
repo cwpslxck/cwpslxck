@@ -10,9 +10,9 @@ function Footer() {
         <Link href={"/"}>
           <GrHomeRounded />
         </Link>
-        <div className="cursor-not-allowed">
+        <Link href={"/blog"}>
           <LuNotebookText />
-        </div>
+        </Link>
         <Link target="_blank" href={"https://github.com/cwpslxck"}>
           <BsGithub />
         </Link>
