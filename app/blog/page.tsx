@@ -1,90 +1,52 @@
-// app/blog/page.tsx
-import { Metadata } from "next";
 import Link from "next/link";
 import { fetchBlogFeed, stripHtml, formatDate } from "@/lib/blog";
-import { Rubik } from "next/font/google";
-
-export const metadata: Metadata = {
-  title: "Amin Zare | Blog",
-};
-const font = Rubik({
-  subsets: ["arabic"],
-});
 
 export default async function BlogPage() {
   const feed = await fetchBlogFeed();
 
   return (
-    <div className={font.className}>
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            {feed.title || "Blog"}
-          </h1>
-          {feed.description && (
-            <p className="text-xl text-gray-600">{feed.description}</p>
-          )}
-        </header>
+    <div className="max-w-4xl mx-auto px-5 py-8 rtl">
+      <div className="grid grid-cols-2 gap-4">
+        {feed.posts.map((post) => (
+          <Link
+            href={`/blog/${post.id}`}
+            key={post.id}
+            className="w-full border bg-white border-black/10 rounded-md flex flex-col justify-between items-start overflow-hidden"
+          >
+            {/* Thumbnail Section */}
+            <div className="w-full inset-0">
+              <div className="aspect-video h-full bg-black flex items-center justify-center relative overflow-hidden"></div>
+            </div>
 
-        <div className="space-y-8">
-          {feed.posts.map((post) => (
-            <article
-              key={post.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <time
-                    className="text-sm text-gray-500"
-                    dateTime={post.pubDate}
-                  >
-                    {formatDate(post.pubDate)}
-                  </time>
-                </div>
+            {/* Content Section */}
+            <div className="flex flex-col gap-3 py-4 px-2">
+              <h2 className="text-xl font-bold text-gray-900 transition-colors duration-300 line-clamp-2">
+                {post.title}
+              </h2>
 
-                <h2 className="text-2xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition-colors">
-                  <Link href={`/blog/${post.id}`}>{post.title}</Link>
-                </h2>
-
-                {post.description && (
-                  <div className="text-gray-700 mb-4 line-clamp-3">
-                    {stripHtml(post.description).substring(0, 200)}
-                    {stripHtml(post.description).length > 200 && "..."}
-                  </div>
-                )}
-
-                <div className="flex items-center justify-between">
-                  <Link
-                    href={`/blog/${post.id}`}
-                    className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
-                  >
-                    ادامه مطلب
-                    <svg
-                      className="w-4 h-4 mr-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </Link>
-                </div>
+              <div className="text-gray-600 line-clamp-2 text-sm leading-relaxed">
+                {stripHtml(post.description).substring(0, 150)}
+                {stripHtml(post.description).length > 150 && "..."}
               </div>
-            </article>
-          ))}
-        </div>
 
-        {feed.posts.length === 0 && (
-          <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">هیچ مطلبی یافت نشد</p>
-          </div>
-        )}
+              <div className="flex items-center justify-between">
+                <time
+                  className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full"
+                  dateTime={post.pubDate}
+                >
+                  {formatDate(post.pubDate)}
+                </time>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
+
+      {feed.posts.length === 0 && (
+        <div className="text-center py-12">
+          <p className="text-gray-500 text-lg">هیچ مطلبی یافت نشد</p>
+        </div>
+      )}
     </div>
   );
 }

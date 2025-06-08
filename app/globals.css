@@ -31,10 +31,18 @@ body {
   color: var(--foreground);
 }
 
+.rtl {
+  direction: rtl;
+}
+
 section {
   @apply p-5 border-b border-black/10;
 }
 
 a.external-links {
   @apply text-stone-900 hover:underline;
+}
+
+.load {
+  @apply bg-foreground/20 animate-pulse rounded-md text-transparent;
 }

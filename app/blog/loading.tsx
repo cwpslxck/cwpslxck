@@ -1,36 +1,47 @@
-// app/blog/loading.tsx
 export default function Loading() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="animate-pulse">
-          {/* Header skeleton */}
-          <div className="text-center mb-12">
-            <div className="h-10 bg-gray-200 rounded w-1/3 mx-auto mb-4"></div>
-            <div className="h-6 bg-gray-200 rounded w-1/2 mx-auto"></div>
+    <div className="grid grid-cols-2 gap-4 px-5 py-8 rtl">
+      <div className="w-full border bg-white border-black/10 rounded-md flex flex-col justify-between items-start overflow-hidden">
+        {/* Thumbnail Section */}
+        <div className="w-full inset-0">
+          <div className="aspect-video load !rounded-none h-full"></div>
+        </div>
+
+        {/* Content Section */}
+        <div className="flex flex-col gap-3 py-4 px-2">
+          <div className="load w-2/3 mb-3">عنوان پست شماره یک</div>
+          <div className="load mb-4 line-clamp-2 text-sm">
+            نیست نمیست منستنم تیمنست بمنسیت بمنسیت بمنسیت بمنیستب منیستب منیست
+            نمست بمنس منت منیستمنیستب منسیلمنلکمن بایمنملتکبیمنتکمنمس کیمسنبتل
+            مبیست لکمنیببرمنسیذکمند
+          </div>
+          <div className="flex items-center justify-between">
+            <time className="text-sm load px-3 py-1 !rounded-full">
+              تست تست تست
+            </time>
+          </div>
+        </div>
+      </div>
+      <div className="w-full border bg-white border-black/10 rounded-md flex flex-col justify-between items-start gap-4 overflow-hidden">
+        {/* Thumbnail Section */}
+        <div className="w-full inset-0">
+          <div className="aspect-video load !rounded-none h-full"></div>
+        </div>
+
+        {/* Content Section */}
+        <div className="px-2">
+          <div className="flex items-center justify-between mb-2">
+            <time className="text-sm load px-3 py-1 !rounded-full">
+              تست تست تست
+            </time>
           </div>
 
-          {/* Posts skeleton */}
-          <div className="space-y-8">
-            {[...Array(3)].map((_, i) => (
-              <div key={i} className="bg-white rounded-lg shadow-md p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <div className="h-4 bg-gray-200 rounded w-24"></div>
-                  <div className="h-4 bg-gray-200 rounded w-16"></div>
-                </div>
-                <div className="h-8 bg-gray-200 rounded w-3/4 mb-3"></div>
-                <div className="space-y-2 mb-4">
-                  <div className="h-4 bg-gray-200 rounded"></div>
-                  <div className="h-4 bg-gray-200 rounded w-5/6"></div>
-                  <div className="h-4 bg-gray-200 rounded w-4/6"></div>
-                </div>
-                <div className="flex gap-2 mb-4">
-                  <div className="h-6 bg-gray-200 rounded-full w-16"></div>
-                  <div className="h-6 bg-gray-200 rounded-full w-20"></div>
-                </div>
-                <div className="h-6 bg-gray-200 rounded w-24"></div>
-              </div>
-            ))}
+          <div className="load w-2/3 mb-3">عنوان پست شماره یک</div>
+
+          <div className="load mb-4 line-clamp-2 text-sm">
+            نیست نمیست منستنم تیمنست بمنسیت بمنسیت بمنسیت بمنیستب منیستب منیست
+            نمست بمنس منت منیستمنیستب منسیلمنلکمن بایمنملتکبیمنتکمنمس کیمسنبتل
+            مبیست لکمنیببرمنسیذکمند
           </div>
         </div>
       </div>
