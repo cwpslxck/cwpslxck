@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} antialiased w-full`}>
         <main className="px-2 py-10 md:py-28">
-          <div className="w-full md:max-w-2xl md:mx-auto border-t border-x border-black/10">
+          <div className="w-full md:max-w-2xl md:mx-auto border border-black/10">
             {children}
           </div>
         </main>
