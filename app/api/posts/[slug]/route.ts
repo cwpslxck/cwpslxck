@@ -1,13 +1,8 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { fetchBlogPost } from "@/lib/blog";
 
-export async function GET(
-  request: NextRequest,
-  { params }: { params: { slug: string } }
-) {
+export async function GET({ slug }: { slug: string }) {
   try {
-    const { slug } = params;
-
     if (!slug) {
       return NextResponse.json(
         {
