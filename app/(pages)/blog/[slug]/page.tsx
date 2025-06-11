@@ -1,15 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { fetchBlogPost, fetchBlogFeed, formatDate } from "@/lib/blog";
+import { fetchBlogPost, formatDate } from "@/lib/blog";
 import { BsTwitterX } from "react-icons/bs";
 import Image from "next/image";
-
-export async function generateStaticParams() {
-  const feed = await fetchBlogFeed();
-  return feed.posts.map((post) => ({
-    slug: post.id,
-  }));
-}
 
 export default async function BlogPostPage({
   params,
@@ -70,3 +63,5 @@ export default async function BlogPostPage({
     </div>
   );
 }
+
+export const revalidate = 300;
