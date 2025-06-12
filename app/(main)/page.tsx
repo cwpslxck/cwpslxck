@@ -193,21 +193,21 @@ export default function Home() {
             <div className="timeline-start mb-10 md:text-end">
               <time className="font-mono italic">2023</time>
               <div className="text-lg font-black">web & branding era</div>
-              Launched Instagram pages{" "}
+              Launched Instagram pages like{" "}
               <a
                 className="external-links"
                 href="https://instagram.com/cwpslxck"
               >
                 @cwpslxck
               </a>
-              ,{" "}
+              {" & "}
               <a
                 className="external-links"
                 href="https://instagram.com/vlonefarsi"
               >
                 @vlonefarsi
               </a>{" "}
-              that gained significant traction and views.
+              that gained millions of views.
             </div>
             <hr />
           </li>
