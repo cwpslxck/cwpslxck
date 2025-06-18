@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <>
       <div>
-        <div className="w-full border border-black/10">
+        <div className="w-full border-x border-t border-black/10">
           {children}
         </div>
       </div>
