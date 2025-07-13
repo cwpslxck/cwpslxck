@@ -10,9 +10,9 @@ function Hero() {
           <p className="text-3xl md:text-6xl font-black">Hi, i'm Amin👋🏻</p>
           <p className="text-xl">
             <CalculateAge />
-            -year-old digital creator, frontend developer
+            -years-old digital creator
             <br />
-            Interested in startups, arts, video editing
+            Interested in marketing, web development
           </p>
         </div>
         <div className="max-w-24">

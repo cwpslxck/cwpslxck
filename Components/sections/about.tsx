@@ -5,16 +5,38 @@ function About() {
   return (
     <Section title="About">
       <p className="opacity-85">
-        I'm currently working on{" "}
+        I'm currently leading a few personal Instagram projects as a founder and
+        content strategist, including{" "}
         <a
           className="external-links"
-          href="https://x.com/yxnstudio"
+          href="https://instagram.com/vlonefarsi"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          @YXNstudio
+          @vlonefarsi
         </a>
-        . A platform for new-generation artists that help them manage theire
-        works & sell products & post job applications and many more features.
+        {", "}
+        <a
+          className="external-links"
+          href="https://instagram.com/trxpfa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @trxpfa
+        </a>
+        {" and "}
+        <a
+          className="external-links"
+          href="https://instagram.com/trxpfa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @trxpfa
+        </a>
+        .
+        <br />
+        I'm also trying to launch a SaaS to help new-generation artists grow
+        more easily.
       </p>
     </Section>
   );

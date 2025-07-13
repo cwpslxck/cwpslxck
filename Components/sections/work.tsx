@@ -7,7 +7,7 @@ function Work() {
   return (
     <Section classNameWrapper="flex flex-col gap-4" title="Work Experience">
       <Link
-        href={"https://x.com/yxnstudio"}
+        href={"https://x.com/trxpfa"}
         target="_blank"
         className="w-full border bg-white border-black/10 rounded-md min-h-28 flex justify-between items-start p-4 gap-4  "
       >
@@ -16,7 +16,7 @@ function Work() {
             draggable="false"
             className="rounded-full aspect-square object-contain"
             alt="Brand Picture"
-            src={"/images/yxnstudio.jpg"}
+            src={"/images/trapfa.jpg"}
             width={60}
             height={60}
           />
@@ -24,13 +24,13 @@ function Work() {
         <div className="w-full h-full">
           <div className="w-full justify-between flex pb-2">
             <div>
-              <p className="font-extrabold">YXN Studio</p>
-              <p className="text-sm">Founder</p>
+              <p className="font-extrabold">Trapfa</p>
+              <p className="text-sm">Founder - Content Creator</p>
             </div>
             <div className="text-sm opacity-80">Jul 2023 - Present</div>
           </div>
           <div>
-            a platform for new-generation artists to make connections &
+            News based platform for artists to make connections &
             <br />
             find jobs & sell products and make arts!
           </div>
