@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Footer from "@/Components/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const font = Space_Grotesk({
   subsets: ["latin"],
@@ -25,11 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics />
       <body className={`${font.className} antialiased w-full`}>
         <main className="px-2 py-10 md:py-28">
-          <div className="w-full md:max-w-2xl md:mx-auto">
-            {children}
-          </div>
+          <div className="w-full md:max-w-2xl md:mx-auto">{children}</div>
         </main>
         <Footer />
       </body>
