@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../section";
 import Link from "next/link";
 import { Download, Mail } from "lucide-react";
+import { DisplayVersion } from "../displayVersion";
 
 function Connect() {
   return (
@@ -25,6 +26,9 @@ function Connect() {
           or
           <br />
           connect with me on X
+        </div>
+        <div className="w-full pt-6 text-sm font-light flex justify-center items-center">
+          Amin Zare - <DisplayVersion />
         </div>
       </div>
     </Section>

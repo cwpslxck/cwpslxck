@@ -12,7 +12,7 @@ function Hero() {
             <CalculateAge />
             -years-old digital creator
             <br />
-            Interested in marketing, web development
+            Interested in web dev and digital marketing
           </p>
         </div>
         <div className="max-w-24">

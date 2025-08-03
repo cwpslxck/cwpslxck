@@ -5,20 +5,14 @@ function Skills() {
   const marketing_skills = [
     "Premiere Pro",
     "After Effects",
+    "Photoshop",
     "CapCut",
-    "Inshot",
+    "Figma",
   ];
-  const web_skills = [
-    "ReactJS",
-    "NextJS",
-    "Typescript",
-    "Tailwindcss",
-    "ShadcnUI",
-    "DaisyUI",
-  ];
+  const web_skills = ["NextJS", "Tailwindcss", "ShadcnUI", "ThreeJS"];
   return (
     <Section title="Skills">
-      <div className="w-full flex flex-wrap gap-2">
+      <div className="w-full flex justify-center flex-wrap gap-2">
         {marketing_skills.map((s, i) => (
           <div className="px-1.5 py-0.5 bg-black rounded-lg text-white" key={i}>
             {s}
@@ -26,7 +20,7 @@ function Skills() {
         ))}
         {web_skills.map((s, i) => (
           <div
-            className="px-1.5 py-0.5 bg-violet-900 rounded-lg text-white"
+            className="px-1.5 py-0.5 bg-violet-700 rounded-lg text-white"
             key={i}
           >
             {s}

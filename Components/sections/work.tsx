@@ -24,15 +24,13 @@ function Work() {
         <div className="w-full h-full">
           <div className="w-full justify-between flex pb-2">
             <div>
-              <p className="font-extrabold">Trapfa</p>
-              <p className="text-sm">Founder - Content Creator</p>
+              <p className="font-extrabold">YXN</p>
+              <p className="text-sm">Founder</p>
             </div>
-            <div className="text-sm opacity-80">Jul 2023 - Present</div>
+            <div className="text-sm opacity-80">Dec 2024 - Present</div>
           </div>
           <div>
-            News based platform for artists to make connections &
-            <br />
-            find jobs & sell products and make arts!
+            Content creation agency with focus on small instagram businesses
           </div>
         </div>
       </Link>

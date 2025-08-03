@@ -39,11 +39,7 @@ function Timeline() {
           <div className="timeline-start mb-10 md:text-end">
             <time className="font-mono italic">2023</time>
             <div className="text-lg font-black">web & branding era</div>
-            Launched few brands like{" "}
-            <a className="external-links" href="https://instagram.com/cwpslxck">
-              @cwpslxck
-            </a>{" "}
-            that reached millions of views
+            Launched few instagram brands that reached millions of views
           </div>
           <hr />
         </li>
@@ -54,8 +50,8 @@ function Timeline() {
           </div>
           <div className="timeline-end md:mb-10">
             <time className="font-mono italic">2024</time>
-            <div className="text-lg font-black">time to make some money 😭</div>
-            i Started learning NextJS to turn skills into income opportunities
+            <div className="text-lg font-black">time to make money 😭</div>I
+            Started learning NextJS to turn skills into income opportunities
           </div>
           <hr />
         </li>
@@ -66,9 +62,9 @@ function Timeline() {
           </div>
           <div className="timeline-start mb-10 md:text-end">
             <time className="font-mono italic">2025</time>
-            <div className="text-lg font-black">is this the year?</div>
-            Building connections in web development & marketing and taking
-            projects to the next level
+            <div className="text-lg font-black">IS THIS THE YEAR?</div>
+            Building connections, contributing on open-source projects and
+            reaching to the next levels
           </div>
           {/* <hr /> */}
         </li>

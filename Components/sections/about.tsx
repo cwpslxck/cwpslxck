@@ -6,7 +6,7 @@ function About() {
     <Section title="About">
       <p className="opacity-85">
         I'm currently leading a few personal Instagram projects as a founder and
-        content strategist, including{" "}
+        content creator, like{" "}
         <a
           className="external-links"
           href="https://instagram.com/vlonefarsi"
@@ -15,28 +15,10 @@ function About() {
         >
           @vlonefarsi
         </a>
-        {", "}
-        <a
-          className="external-links"
-          href="https://instagram.com/trxpfa"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @trxpfa
-        </a>
-        {" and "}
-        <a
-          className="external-links"
-          href="https://instagram.com/trxpfa"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @trxpfa
-        </a>
         .
         <br />
-        I'm also trying to launch a SaaS to help new-generation artists grow
-        more easily.
+        I'm also developing my own startups and SaaS products as a full-time
+        developer.
       </p>
     </Section>
   );
