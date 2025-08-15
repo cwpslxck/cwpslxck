@@ -11,7 +11,7 @@ function Connect() {
         <Link
           download={true}
           className="px-4 hover:scale-105 transition-transform py-2 bg-gradient-to-l from-zinc-700 via-zinc-900 to-zinc-950 text-white items-center inline-flex gap-2 rounded-lg"
-          href={"/downloads/resume.pdf"}
+          href={"/downloads/aminzare-resume.pdf"}
         >
           <Download size={18} />
           <p>Download CV Resume File</p>
