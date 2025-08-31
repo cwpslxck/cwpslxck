@@ -9,9 +9,9 @@ function Connect() {
     <Section>
       <div className="flex flex-col items-center gap-3 py-6">
         <Link
-          download={true}
           className="px-4 hover:scale-105 transition-transform py-2 bg-gradient-to-l from-zinc-700 via-zinc-900 to-zinc-950 text-white items-center inline-flex gap-2 rounded-lg"
           href={"/downloads/aminzare-resume.pdf"}
+          target="_blank"
         >
           <Download size={18} />
           <p>Download CV Resume File</p>

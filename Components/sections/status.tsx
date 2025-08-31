@@ -8,15 +8,15 @@ function Status() {
       <div className="pt-8 grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="flex justify-center items-center flex-col">
           <div className="text-7xl font-extrabold tracking-tight drop-shadow-xl">
-            +100
+            +160
           </div>
-          <p>github followers</p>
+          <p>Github Followers</p>
         </div>
         <div className="flex justify-center items-center flex-col">
           <div className="text-7xl font-extrabold tracking-tight drop-shadow-xl">
-            +2
+            2
           </div>
-          <p>open-source contributes</p>
+          <p>Projects Lunched</p>
         </div>
       </div>
     </Section>

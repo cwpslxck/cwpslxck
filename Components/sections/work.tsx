@@ -7,7 +7,7 @@ function Work() {
   return (
     <Section classNameWrapper="flex flex-col gap-4" title="Work Experience">
       <Link
-        href={"https://x.com/trxpfa"}
+        href={"https://instagram.com/yxnstudio"}
         target="_blank"
         className="w-full border bg-white border-black/10 rounded-md min-h-28 flex justify-between items-start p-4 gap-4  "
       >
@@ -16,7 +16,7 @@ function Work() {
             draggable="false"
             className="rounded-full aspect-square object-contain"
             alt="Brand Picture"
-            src={"/images/trapfa.jpg"}
+            src={"/images/yxn.jpg"}
             width={60}
             height={60}
           />
@@ -27,11 +27,9 @@ function Work() {
               <p className="font-extrabold">YXN</p>
               <p className="text-sm">Founder</p>
             </div>
-            <div className="text-sm opacity-80">Dec 2024 - Present</div>
+            <div className="text-sm opacity-80">LUNCH SOON</div>
           </div>
-          <div>
-            Content creation agency with focus on small instagram businesses
-          </div>
+          <div>Small creative team with focus on building cool genz app</div>
         </div>
       </Link>
       <Link

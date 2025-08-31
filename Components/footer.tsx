@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BsGithub, BsInstagram, BsTwitterX } from "react-icons/bs";
+import { BsGithub, BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
 import { GrHomeRounded } from "react-icons/gr";
 import { LuNotebookText } from "react-icons/lu";
 
@@ -29,16 +29,16 @@ function Footer() {
         <Link
           className="size-12 rounded-full flex items-center justify-center"
           target="_blank"
-          href={"https://x.com/cwpslxck"}
+          href={"https://linkedin.com/in/2005aminzare"}
         >
-          <BsTwitterX />
+          <BsLinkedin />
         </Link>
         <Link
           className="size-12 rounded-full flex items-center justify-center"
           target="_blank"
-          href={"https://instagram.com/cwpslxck"}
+          href={"https://x.com/cwpslxck"}
         >
-          <BsInstagram />
+          <BsTwitterX />
         </Link>
       </div>
     </div>
