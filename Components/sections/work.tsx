@@ -29,7 +29,7 @@ function Work() {
             </div>
             <div className="text-sm opacity-80">LUNCH SOON</div>
           </div>
-          <div>Small creative team with focus on building cool genz app</div>
+          <p>Small creative team with focus on building cool genz app</p>
         </div>
       </Link>
       <Link
@@ -55,10 +55,10 @@ function Work() {
             </div>
             <div className="text-sm opacity-80">Apr 2025 - Present</div>
           </div>
-          <div>
+          <p>
             Linkedin-like multilingual Iranian social network with focus on
             approved content
-          </div>
+          </p>
         </div>
       </Link>
     </Section>

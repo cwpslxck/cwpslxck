@@ -12,6 +12,7 @@ export default async function BlogPage() {
           <Link
             href={`/blog/${post.id}`}
             key={post.id}
+            title={`مشاهده پست ${post.title}`}
             className="w-full border bg-white relative border-black/10 rounded-md flex flex-col justify-between items-start overflow-hidden"
           >
             <div className="flex grow flex-col justify-between gap-1 px-4 py-3">

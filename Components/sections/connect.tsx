@@ -14,19 +14,23 @@ function Connect() {
           target="_blank"
         >
           <Download size={18} />
-          <p>Download CV Resume File</p>
+          <h2>Download CV Resume File</h2>
         </Link>
         <p className="text-3xl md:text-6xl font-black">Get In Touch</p>
-        <div className="text-center text-base md:text-xl">
+        <p className="text-center text-base md:text-xl">
           Ready to talk? Reach me out via
           <br />
-          <a className="text-blue-500" href="mailto:cwpslxck@gmail.com">
-            cwpslxck@gmail.com
+          <a
+            title="Email me for projects & connection"
+            className="text-blue-500 hover:underline"
+            href="mailto:2005aminzare@gmail.com"
+          >
+            2005aminzare@gmail.com
           </a>{" "}
           or
           <br />
-          connect with me on X
-        </div>
+          connect with me on LinkedIn
+        </p>
         <div className="w-full pt-6 text-sm font-light flex justify-center items-center">
           Amin Zare - <DisplayVersion />
         </div>

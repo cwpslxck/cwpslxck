@@ -13,8 +13,10 @@ function Timeline() {
           <div className="timeline-start mb-10 md:text-end">
             <time className="font-mono italic">2020</time>
             <div className="text-lg font-black">how everythings begin?</div>
-            bought a Premiere Pro course and started my pro video editing
-            journey after editing on mobile for years
+            <p>
+              bought a Premiere Pro course and started my pro video editing
+              journey after editing on mobile for years
+            </p>
           </div>
           <hr />
         </li>
@@ -26,8 +28,10 @@ function Timeline() {
           <div className="timeline-end md:mb-10">
             <time className="font-mono italic">2021</time>
             <div className="text-lg font-black">on my way to coding</div>
-            COVID lockdown led me to explore new skills and i learned how online
-            game server development works
+            <p>
+              COVID lockdown led me to explore new skills and i learned how
+              online game server development works
+            </p>
           </div>
           <hr />
         </li>
@@ -39,7 +43,7 @@ function Timeline() {
           <div className="timeline-start mb-10 md:text-end">
             <time className="font-mono italic">2023</time>
             <div className="text-lg font-black">web & branding era</div>
-            Launched few instagram brands that reached millions of views
+            <p>Launched few instagram brands that reached millions of views</p>
           </div>
           <hr />
         </li>
@@ -50,8 +54,10 @@ function Timeline() {
           </div>
           <div className="timeline-end md:mb-10">
             <time className="font-mono italic">2024</time>
-            <div className="text-lg font-black">time to make money 😭</div>I
-            Started learning NextJS to turn skills into income opportunities
+            <div className="text-lg font-black">time to make money 😭</div>
+            <p>
+              I Started learning NextJS to turn skills into income opportunities
+            </p>
           </div>
           <hr />
         </li>
@@ -63,8 +69,10 @@ function Timeline() {
           <div className="timeline-start mb-10 md:text-end">
             <time className="font-mono italic">2025</time>
             <div className="text-lg font-black">IS THIS THE YEAR?</div>
-            Building connections, contributing on open-source projects and
-            reaching to the next levels
+            <p>
+              Building connections, contributing on open-source projects and
+              reaching to the next levels
+            </p>
           </div>
           {/* <hr /> */}
         </li>

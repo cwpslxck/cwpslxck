@@ -6,15 +6,15 @@ function Hero() {
   return (
     <Section>
       <div className="flex justify-between items-start p-2 md:p-6">
-        <div className="w-[80%]">
-          <p className="text-3xl md:text-6xl font-black">Hi, i'm Amin👋🏻</p>
-          <p className="text-xl">
+        <h1 className="w-[80%]">
+          <div className="text-3xl md:text-6xl font-black">Hi, i'm Amin👋🏻</div>
+          <div className="text-xl">
             <CalculateAge />
             -years-old digital creator
             <br />
             Interested in web dev and digital marketing
-          </p>
-        </div>
+          </div>
+        </h1>
         <div className="max-w-24">
           <Image
             draggable="false"

@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { fetchBlogPost, formatDate } from "@/lib/blog";
-import { BsTwitterX } from "react-icons/bs";
+import { BsLinkedin, BsTwitterX } from "react-icons/bs";
 import Image from "next/image";
+import { FiLinkedin } from "react-icons/fi";
 
 export default async function BlogPostPage({
   params,
@@ -22,7 +23,14 @@ export default async function BlogPostPage({
         <article>
           <header className="pb-8">
             <div className="inline-flex items-center gap-2 text-md opacity-80">
-              <Link href={"/"}>خانه</Link>/<Link href={"/blog"}>بلاگ</Link>/
+              <Link title="Visit home page" href={"/"}>
+                خانه
+              </Link>
+              /
+              <Link title="Visit blog page" href={"/blog"}>
+                بلاگ
+              </Link>
+              /
             </div>
             <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
               {post.title}
@@ -33,17 +41,18 @@ export default async function BlogPostPage({
                   height={30}
                   width={30}
                   alt="Profile"
+                  loading="lazy"
                   className="rounded-full size-9"
                   src={"https://github.com/cwpslxck.png"}
                 />
-                <p>امین</p>
+                <p>امین زارع</p>
                 <Link
+                  title="Visit my LinkedIn"
                   target="_blank"
-                  href={"https://x.com/cwpslxck"}
-                  className="rounded-full mx-2 text-white bg-black px-4 gap-1 inline-flex items-center py-2 border"
+                  href={"https://www.linkedin.com/in/aminzare2005/"}
+                  className="p-2"
                 >
-                  cwpslxck
-                  <BsTwitterX className="size-3" />
+                  <FiLinkedin className="size-5" />
                 </Link>
               </div>
               <time className="text-sm opacity-80" dateTime={post.pubDate}>

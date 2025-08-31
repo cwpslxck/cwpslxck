@@ -2,14 +2,15 @@ import React from "react";
 import Section from "../section";
 
 function Skills() {
-  const marketing_skills = [
-    "Premiere Pro",
-    "After Effects",
-    "Photoshop",
-    "CapCut",
-    "Figma",
+  const marketing_skills = ["Premiere Pro", "Photoshop", "Figma"];
+  const web_skills = [
+    "NextJS",
+    "Expo React-Native",
+    "Tailwindcss",
+    "ShadcnUI",
+    "ThreeJS",
+    "React-Query",
   ];
-  const web_skills = ["NextJS", "Tailwindcss", "ShadcnUI", "ThreeJS"];
   return (
     <Section title="Skills">
       <div className="w-full flex justify-center flex-wrap gap-2">
