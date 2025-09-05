@@ -1,9 +1,5 @@
 export const GALLERY_ITEMS = [
   {
-    title: "معلمان نمونه ناحیه دو شیراز 1403 - 1404",
-    url: "/gallery/1.png",
-  },
-  {
     title: "UI post card design for @TRXPFA",
     url: "/gallery/2.png",
   },
@@ -26,9 +22,5 @@ export const GALLERY_ITEMS = [
   {
     title: "Story banner for FINGER CODER: CODE NEST",
     url: "/gallery/7.png",
-  },
-  {
-    title: "LinkedIn header for my personal account",
-    url: "/gallery/8.png",
   },
 ];
