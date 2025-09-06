@@ -14,7 +14,7 @@ function Connect() {
           target="_blank"
         >
           <Download size={18} />
-          <h2>Download CV Resume File</h2>
+          <h2>Download Farsi CV Resume File</h2>
         </Link>
         <p className="text-3xl md:text-6xl font-black">Get In Touch</p>
         <p className="text-center text-base md:text-xl">
