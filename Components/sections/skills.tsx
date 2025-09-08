@@ -2,26 +2,27 @@ import React from "react";
 import Section from "../section";
 
 function Skills() {
-  const marketing_skills = ["Premiere Pro", "Photoshop", "Figma"];
-  const web_skills = [
+  const soft_skills = ["Git", "Swagger", "Figma", "ThreeJS", "React-Query"];
+  const hard_skills = [
     "NextJS",
     "Expo React-Native",
     "Tailwindcss",
     "ShadcnUI",
-    "ThreeJS",
-    "React-Query",
   ];
   return (
     <Section title="Skills">
       <div className="w-full flex justify-center flex-wrap gap-2">
-        {marketing_skills.map((s, i) => (
-          <div className="px-1.5 py-0.5 bg-black rounded-lg text-white" key={i}>
+        {hard_skills.map((s, i) => (
+          <div
+            className="px-1.5 py-0.5 border hover:bg-violet-600 hover:text-white duration-300 border-violet-700 rounded-lg"
+            key={i}
+          >
             {s}
           </div>
         ))}
-        {web_skills.map((s, i) => (
+        {soft_skills.map((s, i) => (
           <div
-            className="px-1.5 py-0.5 bg-violet-700 rounded-lg text-white"
+            className="px-1.5 py-0.5 border hover:bg-black hover:text-white rounded-lg duration-300"
             key={i}
           >
             {s}

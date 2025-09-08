@@ -1,10 +1,10 @@
-import { GALLERY_ITEMS } from "@/constants/gallery";
+import { GALLERY_ITEMS } from "@/constants/items";
 import Image from "next/image";
 
 export default async function GalleryPage() {
   return (
     <div className="px-5 py-8">
-      <div className="columns-2 space-y-4 gap-4">
+      <div className="columns-1 md:columns-2 space-y-4 gap-4">
         {GALLERY_ITEMS.map((item, i) => (
           <div
             key={i}
