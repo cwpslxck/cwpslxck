@@ -5,6 +5,7 @@ import Work from "@/Components/sections/work";
 import Status from "@/Components/sections/status";
 import Timeline from "@/Components/sections/timeline";
 import Connect from "@/Components/sections/connect";
+import GallerySection from "@/Components/sections/gallery";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Work />
       <Status />
       <Timeline />
+      <GallerySection />
       <Connect />
     </>
   );
