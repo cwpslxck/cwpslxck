@@ -6,6 +6,9 @@ import {
   TwitterIcon,
 } from "lucide-react";
 import Link from "next/link";
+import { FaTiktok } from "react-icons/fa6";
+import { PiTiktokLogoBold } from "react-icons/pi";
+import { RiTiktokLine } from "react-icons/ri";
 
 function Footer() {
   return (
@@ -19,18 +22,19 @@ function Footer() {
           <HouseIcon />
         </Link>
         <Link
-          title="Visit blog page"
-          className="size-12 rounded-full flex items-center justify-center"
-          href={"/blog"}
-        >
-          <NotebookTextIcon />
-        </Link>
-        <Link
           title="Visit gallery page"
           className="size-12 rounded-full flex items-center justify-center"
           href={"/gallery"}
         >
           <ImagesIcon />
+        </Link>
+        <Link
+          title="Visit my Tiktok"
+          className="size-12 rounded-full flex items-center justify-center"
+          target="_blank"
+          href={"https://tiktok.com/@cwpslxck"}
+        >
+          <RiTiktokLine size={28} />
         </Link>
         <Link
           title="Visit my LinkedIn"

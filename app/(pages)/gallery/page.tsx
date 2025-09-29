@@ -3,13 +3,10 @@ import Image from "next/image";
 
 export default async function GalleryPage() {
   return (
-    <div className="px-5 py-8">
-      <div className="columns-1 md:columns-2 space-y-4 gap-4">
+    <div className="px-5 py-8 max-w-sm mx-auto">
+      <div className="flex flex-col gap-4">
         {GALLERY_ITEMS.map((item, i) => (
-          <div
-            key={i}
-            className="w-full flex gap-2 flex-col break-inside-avoid"
-          >
+          <div key={i} className="w-full flex gap-2 flex-col">
             <Image
               alt={item.title}
               src={item.url}
