@@ -22,9 +22,9 @@ function Footer() {
           <HouseIcon />
         </Link>
         <Link
-          title="Visit gallery page"
+          title="Visit design page"
           className="size-12 rounded-full flex items-center justify-center"
-          href={"/gallery"}
+          href={"/design"}
         >
           <ImagesIcon />
         </Link>
@@ -32,7 +32,7 @@ function Footer() {
           title="Visit my Tiktok"
           className="size-12 rounded-full flex items-center justify-center"
           target="_blank"
-          href={"https://tiktok.com/@cwpslxck"}
+          href={"/tiktok"}
         >
           <RiTiktokLine size={28} />
         </Link>
@@ -40,7 +40,7 @@ function Footer() {
           title="Visit my LinkedIn"
           className="size-12 rounded-full flex items-center justify-center"
           target="_blank"
-          href={"https://www.linkedin.com/in/aminzare2005/"}
+          href={"/linkedin"}
         >
           <LinkedinIcon />
         </Link>
@@ -48,7 +48,7 @@ function Footer() {
           title="Visit my X (Twitter)"
           className="size-12 rounded-full flex items-center justify-center"
           target="_blank"
-          href={"https://x.com/cwpslxck"}
+          href={"/x"}
         >
           <TwitterIcon />
         </Link>

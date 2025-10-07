@@ -1,11 +1,15 @@
 export const GALLERY_ITEMS = [
   {
+    title: "Phonecase design for @VLONEFARSI",
+    url: "/gallery/1.png",
+  },
+  {
     title: "UI post card design for @TRXPFA",
     url: "/gallery/2.png",
   },
   {
-    title: "Logo design for @YXNSTUDIO",
-    url: "/gallery/3.png",
+    title: "Banner design for github project",
+    url: "/gallery/3.jpg",
   },
   {
     title: "Sticker design for @VLONEFARSI",
@@ -23,23 +27,29 @@ export const GALLERY_ITEMS = [
     title: "Story banner for FINGER CODER: CODE NEST",
     url: "/gallery/7.png",
   },
+  {
+    title: "Logo design for @YXNSTUDIO",
+    url: "/gallery/8.png",
+  },
+  {
+    title: "Avatar design for @PERSIANGENZ",
+    url: "/gallery/9.png",
+  },
 ];
 
 export const WORK_ITEMS = [
   {
     compony: "YXN Studio",
-    position: "Founder, Product Manager",
+    position: "Founder",
     description: "Small creative team with focus on building cool genz app",
-    image: "/images/yxn.jpg",
-    date: "LUNCH SOON",
-    link: { title: "Instagram", href: "https://instagram.com/yxnstudio" },
+    image: "/images/yxn.png",
+    link: { title: "Linkedin", href: "https://yxn.cwpslxck.ir" },
   },
   {
     compony: "LearnPOV",
     position: "Frontend Developer",
     description: "Linkedin-like multilingual Iranian social network",
     image: "/images/learnpov.jpg",
-    date: "Apr 2025 - Present",
     link: { title: "App", href: "https://learnpov.com" },
   },
 ];

@@ -18,8 +18,8 @@ function Work() {
               <Image
                 src={item.image}
                 alt={item.compony}
-                width={30}
-                height={30}
+                width={60}
+                height={60}
                 className="size-10 rounded-lg"
               />
               <div className="flex flex-col">
