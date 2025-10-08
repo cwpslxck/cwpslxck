@@ -16,7 +16,6 @@ export default function Home() {
       <Work />
       <Status />
       <Timeline />
-      <DesignsSection />
       <Connect />
     </>
   );
