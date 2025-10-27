@@ -70,8 +70,8 @@ function Timeline() {
             <time className="font-mono italic">2025</time>
             <div className="text-lg font-black">IS THIS THE YEAR?</div>
             <p>
-              Building connections, contributing on open-source projects and
-              reaching to the next levels
+              Building connections, learning product management and working on
+              small projects and startups.
             </p>
           </div>
           {/* <hr /> */}

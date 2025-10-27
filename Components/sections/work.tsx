@@ -20,6 +20,7 @@ function Work() {
                 alt={item.compony}
                 width={60}
                 height={60}
+                draggable="false"
                 className="size-10 rounded-lg"
               />
               <div className="flex flex-col">

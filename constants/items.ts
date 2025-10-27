@@ -40,16 +40,41 @@ export const GALLERY_ITEMS = [
 export const WORK_ITEMS = [
   {
     compony: "YXN Studio",
-    position: "Founder",
-    description: "Small creative team with focus on building cool genz app",
+    position: "Co-Founder, Frontend Developer",
+    description: "digital creative studio that builds cool apps and landing pages",
     image: "/images/yxn.png",
-    link: { title: "Linkedin", href: "https://yxn.cwpslxck.ir" },
+    link: { title: "Linkedin", href: "https://www.linkedin.com/company/yxn" },
   },
   {
     compony: "LearnPOV",
     position: "Frontend Developer",
-    description: "Linkedin-like multilingual Iranian social network",
+    description: "social learning network for sharing knowledge and growing together",
     image: "/images/learnpov.jpg",
     link: { title: "App", href: "https://learnpov.com" },
   },
+];
+
+export const PROJECTS_ITEMS = [
+  {
+    title: "BasicNote",
+    description: "simple local-first todo app with cool uiux",
+    image: "https://raw.githubusercontent.com/cwpslxck/basicnote/refs/heads/main/Preview.jpg",
+    link: { title: "Github", href: "https://github.com/cwpslxck/basicnote" },
+    items: ["nextjs", 'tailwindcss']
+  },
+  {
+    title: "@vlonefarsi Shop",
+    description: "e-commerce app works with supabase & zibal built with v0",
+    image: "https://raw.githubusercontent.com/cwpslxck/to-farsi/refs/heads/main/Preview.jpg",
+    video: 'https://vlonefarsi-phonecase.storage.iran.liara.space/portfolio/vlonefarsi.mp4',
+    link: { title: "App", href: "https://vlonefarsi.ir" },
+    items: ["nextjs", 'supabase', 'shadcnui'],
+  },
+  // {
+  //   title: "To-Farsi",
+  //   description: "simple npm package to convert english digits to farsi digits.",
+  //   image: "https://raw.githubusercontent.com/cwpslxck/to-farsi/refs/heads/main/Preview.jpg",
+  //   link: { title: "NPM", href: "https://www.npmjs.com/package/to-farsi" },
+  //   items: ["npm", "open-source"],
+  // },
 ];

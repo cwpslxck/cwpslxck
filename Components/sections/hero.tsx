@@ -7,7 +7,7 @@ function Hero() {
     <Section>
       <div className="flex justify-between items-start p-2 md:p-6">
         <h1 className="w-[80%]">
-          <div className="text-3xl md:text-6xl font-black">Hi, i'm Amin👋🏻</div>
+          <div className="text-3xl md:text-6xl font-black">I'm Amin👋🏻</div>
           <div className="text-xl">
             <CalculateAge />
             -years-old digital creator
